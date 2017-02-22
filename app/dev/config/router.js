@@ -1,0 +1,25 @@
+angular.module("myapp")
+		.config(function($stateProvider,$urlRouterProvider){//配置路由
+			$stateProvider
+						.state("home",{
+							url:"/home",
+							templateUrl:"./controller/home/home.html",
+							controller:"myHome"
+						})
+						.state("index",{
+							url:"/index",
+							templateUrl:"./controller/index/index.html",
+							controller:"myIndex"
+						})
+						.state("driver",{
+							url:"/driver",
+							templateUrl:"./controller/driver/driver.html",
+							controller:"myDirver"
+						})
+						.state("detail",{
+							url:"/detail/:id",
+							templateUrl:"./controller/detail/detail.html",
+							controller:"detailCtrl"
+						})
+			$urlRouterProvider.otherwise("/index")
+		})

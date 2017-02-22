@@ -1,0 +1,36 @@
+html{
+	font-size: 100px;
+}
+body *{
+	font-size: 0.14rem;
+}
+.lotour_wrap{
+	width: 100%;
+	position: relative;
+	@import "../base/header.less";
+	.main{
+		position:relative;
+		width: 100%;
+		@import "../base/banner.less";
+		@import "../base/number.less";
+		@import "../base/list.less";
+		@import "../base/area.less";
+		.title{
+			width: 100%;
+			background: #eee;
+			height: 0.40rem;
+			line-height: 0.30rem;
+			span{
+				display: block;
+				color: #ee6900;
+				font-size: 0.15rem;
+				margin: 0 auto;
+				text-align: center;
+				border-bottom: 1px solid #ee6900;
+				width:0.60rem;
+			}
+		}
+	}
+	@import "../base/footer.less";
+
+}

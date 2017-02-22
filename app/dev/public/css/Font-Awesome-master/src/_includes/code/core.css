@@ -1,0 +1,37 @@
+/*
+Error: Invalid CSS after "...y: inline-block": expected "{", was ";"
+        on line 1 of E:\h5\h5work\monthExam\css\Font-Awesome-master\src\_includes\code\core.scss
+
+1:   display: inline-block;
+2:   font: normal normal normal #{$fa-font-size-base}/#{$fa-line-height-base} FontAwesome; // shortening font declaration
+3:   font-size: inherit; // can't have font-size inherit on line above, so need to override
+4:   text-rendering: auto; // optimizelegibility throws things off #1094
+5:   -webkit-font-smoothing: antialiased;
+6:   -moz-osx-font-smoothing: grayscale;
+
+Backtrace:
+E:\h5\h5work\monthExam\css\Font-Awesome-master\src\_includes\code\core.scss:1
+D:/各种安装程序/Koala/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
+D:/各种安装程序/Koala/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1101:in `expected'
+D:/各种安装程序/Koala/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1096:in `tok!'
+D:/各种安装程序/Koala/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:641:in `block'
+D:/各种安装程序/Koala/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:635:in `ruleset'
+D:/各种安装程序/Koala/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:660:in `block_child'
+D:/各种安装程序/Koala/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:650:in `block_contents'
+D:/各种安装程序/Koala/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:117:in `stylesheet'
+D:/各种安装程序/Koala/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:42:in `parse'
+D:/各种安装程序/Koala/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:393:in `_to_tree'
+D:/各种安装程序/Koala/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+D:/各种安装程序/Koala/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+D:/各种安装程序/Koala/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+D:/各种安装程序/Koala/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+D:/各种安装程序/Koala/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+D:/各种安装程序/Koala/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+D:/各种安装程序/Koala/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+D:/各种安装程序/Koala/Koala/bin/sass:18:in `load'
+D:/各种安装程序/Koala/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...y: inline-block\": expected \"{\", was \";\"\A         on line 1 of E:\h5\h5work\monthExam\css\Font-Awesome-master\src\_includes\code\core.scss\A \A 1:   display: inline-block;\A 2:   font: normal normal normal #{$fa-font-size-base}/#{$fa-line-height-base} FontAwesome; // shortening font declaration\A 3:   font-size: inherit; // can't have font-size inherit on line above, so need to override\A 4:   text-rendering: auto; // optimizelegibility throws things off #1094\A 5:   -webkit-font-smoothing: antialiased;\A 6:   -moz-osx-font-smoothing: grayscale;"; }

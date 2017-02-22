@@ -2,9 +2,49 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="./public/css/gulpStyle.min.css">
+	<link rel="stylesheet" href="lib/swiper.min.css">
+	<link rel="stylesheet" href="./public/css/Font-Awesome-master/css/font-awesome.min.css">
 </head>
-<body>
+<body ng-app="myapp">
+	<div class="lotour_wrap"  ng-controller="rootCtrl">
+		<header-directive></header-directive>
+		<div class="main" ui-view style="{{ pagePadding ? '' : 'padding-bottom:0;' }}"></div>	
+		<footer-directive></footer-directive>
+	</div>
+	<script src="./lib/angular2.min.js"></script>
+	<script src="./lib/angular-ui-router.js"></script>
+	<script src="./lib/swiper.min.js"></script>
+	<!--定义angular ui-router-->
+	<script src="./main.js"></script>
+	<!--定义angular ui-router-->
+
+	<!--装饰-->
+	<script src="./decorator/scroll.js"></script>
+	<script src="./decorator/backTop.js"></script>
+	<!--装饰-->
+	<!--过滤-->
+	<script src="./filter/toTrusted.js"></script>
+	<!--过滤-->
+	<!--配置路由-->
+	<script src="./config/router.js"></script>
+	<!--配置路由-->
+
+	<!--页面-->
+	<script src="./controller/home/home.ctrl.js"></script>
+	<script src="./controller/index/index.ctrl.js"></script>
+	<script src="./controller/driver/driver.ctrl.js"></script>	
+	<script src="./controller/detail/detail.ctrl.js"></script>
+	<!--页面-->
+
+	<!--组件-->
+	<script type="text/javascript" src="./components/footer/footer.directive.js"/></script>
+	<script type="text/javascript" src="./components/header/header.directive.js"/></script>
+	<!--组件-->
+
+
 	
 </body>
 </html>

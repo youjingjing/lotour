@@ -1,0 +1,40 @@
+<div class="main">
+	<div class="banner swiper-container">
+		<ul class="swiper-wrapper">
+			<li ng-repeat="item in list" class="swiper-slide"><img src="{{item.HeadPic}}" alt=""></li>
+		</ul>
+	</div>
+	<div class="number">
+		<a href="javascript:;"> 
+			<i>90</i>
+			<span>灵感</span>
+		</a>
+		<a href="javascript:;"> 
+			<i>90</i>
+			<span>灵感</span>
+		</a>
+		<a href="javascript:;"> 
+			<i>90</i>
+			<span>灵感</span>
+		</a>
+		<a href="javascript:;"> 
+			<i>90</i>
+			<span>灵感</span>
+		</a>
+	</div>
+	<div class="title">
+		<span>主题</span>
+	</div>
+	<div class="list" nav-top>
+		<ul>
+			<li ng-repeat="item in list" ng-style="{color:$first?'#ee6900':'#000'}">{{item.RegionName}}</li>
+		</ul>	 
+	</div>
+	
+	<div class="area" infiniter-scroll infiniter-load="loadList.load()" infiniter-flag="loadList.flg">
+		<ul>
+			<li ng-repeat="item in area" ui-sref="detail({id:item._id})"><img src="{{item.Pic}}" alt=""><span ng-bind-html="item.Dot | myFilter"></span></li>
+		</ul>
+	</div>
+</div>
+
